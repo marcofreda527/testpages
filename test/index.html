@@ -27,10 +27,9 @@
 	    }
 
 	    function doMouseHover(evt) {
-				window.alert("mouse move " + evt.clientX + " " + evt.clientY);
 				var div = document.getElementById("cursor");
-				div.style.top = evt.y + "px";
-				div.sytle.left = evt.x + "px";
+				div.style.top = evt.clientY + "px";
+				div.sytle.left = evt.clientX + "px";
 	    }
     </script>
   </head>
