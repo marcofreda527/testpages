@@ -3,8 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>test by marco</title>
+		
+    <script>
+	    function init() {
+		    window.addEventListener("mousedown", doMouseDown, false);
+		    window.addEventListener("mousehover", doMouseHover, false);
+	    }
+
+	    function doMouseDown(evt) {
+		    window.alert("mouse down");
+	    }
+
+	    function doMouseHover(evt) {
+		    
+	    }
+    </script>
   </head>
-  <body>
+  <body onLoad=init()>
     <p><a href="scrollWindow.html"> Test Case 1 - Scroll Window </a></p>
     <p><a href="scrollDiv.html"> Test Case 2 - Scroll DIV </a></p>
 		<p><a href="scrollWindowAndDiv.html"> Test Case 3 - Scroll DIV and Window with Boundary overlapped</a></p>
