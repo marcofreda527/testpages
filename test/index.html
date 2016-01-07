@@ -4,15 +4,16 @@
     <meta charset="utf-8">
     <title>test by marco</title>
 		<style type="text/css">
+ 		#cursor {
+ 			position: absolute; 
+ 			top: 300px; /* Set this to the height of the header */
+ 			left: 300px; 
+ 			width: 20px;
+			height: 20px;
+ 			background: #DAE9BC; 		
+ 		}
 		</style>
-	 		#cursor {
-	 			position: absolute; 
-	 			top: 300px; /* Set this to the height of the header */
-	 			left: 300px; 
-	 			width: 20px;
-				height: 20px;
-	 			background: #DAE9BC; 		
-	 		}
+	 
     <script>
 	    function init() {
 		    window.addEventListener("mousedown", doMouseDown, false);
