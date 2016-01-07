@@ -3,8 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>test by marco</title>
+
+    <script>
+	    function init() {
+		    window.addEventListener("mousedown", doMouseDown, false);
+		    window.addEventListener("mousehover", doMouseHover, false);
+	    }
+
+	    function doMouseDown(evt) {
+		    window.alert("mouse down");
+	    }
+
+	    function doMouseHover(evt) {
+		    
+	    }
+    </script>	    
+
   </head>
-  <body>
+  <bodyi onLoad=init()>
     <a href="test/index.html"> test page </a>
     
   </body>
