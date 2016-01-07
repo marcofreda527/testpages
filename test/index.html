@@ -3,7 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>test by marco</title>
-		
+		<style type="text/css">
+		</style>
+	 		#cursor {
+	 			position: absolute; 
+	 			top: 300px; /* Set this to the height of the header */
+	 			left: 300px; 
+	 			width: 20px;
+				height: 20px;
+	 			background: #DAE9BC; 		
+	 		}
     <script>
 	    function init() {
 		    window.addEventListener("mousedown", doMouseDown, false);
@@ -15,7 +24,8 @@
 	    }
 
 	    function doMouseHover(evt) {
-		    
+				var div = document.getElementById("cursor");
+				div.
 	    }
     </script>
   </head>
@@ -24,5 +34,7 @@
     <p><a href="scrollDiv.html"> Test Case 2 - Scroll DIV </a></p>
 		<p><a href="scrollWindowAndDiv.html"> Test Case 3 - Scroll DIV and Window with Boundary overlapped</a></p>
 		<p><a href="scrollWindowAndDivNotOverlay.html"> Test Case 4 - Scroll DIV and Window</a></p>
+		
+		<div id="cursor"></div>
   </body>
 </html>
