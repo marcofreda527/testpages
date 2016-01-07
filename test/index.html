@@ -6,10 +6,10 @@
 		<style type="text/css">
  		#cursor {
  			position: absolute; 
- 			top: 300px; /* Set this to the height of the header */
- 			left: 300px; 
- 			width: 20px;
-			height: 20px;
+ 			top: 10px; /* Set this to the height of the header */
+ 			left: 10px; 
+ 			width: 40px;
+			height: 40px;
  			background: #DAE9BC; 		
  		}
 		</style>
@@ -27,8 +27,8 @@
 
 	    function doMouseHover(evt) {
 				var div = document.getElementById("cursor");
-				div.style.top = evt.clientY + "px";
-				div.style.left = evt.clientX + "px";
+				div.style.top = evt.clientY + 5 + "px";
+				div.style.left = evt.clientX + 5 + "px";
 	    }
     </script>
   </head>
