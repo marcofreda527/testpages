@@ -28,7 +28,8 @@
 
 	    function doMouseHover(evt) {
 				var div = document.getElementById("cursor");
-				div.style.top = "200px";
+				div.style.top = evt.screenX + "px";
+				div.sytle.left = evt.screenY + "px";
 	    }
     </script>
   </head>
