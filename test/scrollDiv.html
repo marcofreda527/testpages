@@ -25,6 +25,12 @@
 			overflow: auto; 
 			background: #fff;
 		}
+		
+		#test {
+			width: 500px;
+			overflow-x: scroll;
+			overflow-y: hidden;
+		}
 				
 		#header {
 			position: absolute;
@@ -121,7 +127,7 @@
 				
 		<main>
 			<div class="innertube">
-				<div width="500">test</div>
+				<div id="test" class="innertube">test</div>
 				<h1>Heading</h1>
 				<p><script>generateText(300)</script></p>
 				
