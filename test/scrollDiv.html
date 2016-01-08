@@ -5,7 +5,36 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>Scroll Div</title>
 		<style type="text/css">
-		
+		.wrapper { 
+				background:#EFEFEF; 
+				box-shadow: 1px 1px 10px #999; 
+				margin: auto; 
+				text-align: center; 
+				position: relative;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				border-radius: 5px;
+				margin-bottom: 20px !important;
+				width: 800px;
+				padding-top: 5px;
+			}
+			.scrolls { 
+				overflow-x: scroll;
+				overflow-y: hidden;
+				height: 80px;
+			} 
+			.imageDiv { 
+				margin: 0;
+				height: 80px;
+		    width: 1200px;
+			} 
+			.imageDiv img { 
+				box-shadow: 1px 1px 10px #999; 
+				margin: 2px;
+				max-height: 50px;
+				cursor: pointer;
+			}
+			
 		body {
 			margin: 0;
 			padding: 0;
@@ -24,13 +53,6 @@
 			right: 200px;
 			overflow: auto; 
 			background: #fff;
-		}
-		
-		#test {
-			width: 500px;
-			overflow-x: scroll;
-			overflow-y: hidden;
-			height: 80px;
 		}
 				
 		#header {
@@ -128,28 +150,32 @@
 				
 		<main>
 			<div class="innertube">
-				<div id="test" class="innertube">
-					<img src="http://placehold.it/50x50" />
-					       <img src="http://placehold.it/50x50" />
-					       <img src="http://placehold.it/50x50" />
-					       <img src="http://placehold.it/50x50" />
-					       <img src="http://placehold.it/50x50" />
-					       <img src="http://placehold.it/50x50" />
-					       <img src="http://placehold.it/50x50" />
-					       <img src="http://placehold.it/50x50" />
-					        <img src="http://placehold.it/50x50" />
-					       <img src="http://placehold.it/50x50" />
-					       <img src="http://placehold.it/50x50" />
-					       <img src="http://placehold.it/50x50" />
-					       <img src="http://placehold.it/50x50" />
-					       <img src="http://placehold.it/50x50" />
-					        <img src="http://placehold.it/50x50" />
-					       <img src="http://placehold.it/50x50" />
-					       <img src="http://placehold.it/50x50" />
-					       <img src="http://placehold.it/50x50" />
-					       <img src="http://placehold.it/50x50" />
-					       <img src="http://placehold.it/50x50" />
-				</div>
+				<div class="wrapper">
+				  <div class="scrolls">
+				  <div class="imageDiv">
+				       <img src="http://placehold.it/50x50" />
+				       <img src="http://placehold.it/50x50" />
+				       <img src="http://placehold.it/50x50" />
+				       <img src="http://placehold.it/50x50" />
+				       <img src="http://placehold.it/50x50" />
+				       <img src="http://placehold.it/50x50" />
+				       <img src="http://placehold.it/50x50" />
+				       <img src="http://placehold.it/50x50" />
+				        <img src="http://placehold.it/50x50" />
+				       <img src="http://placehold.it/50x50" />
+				       <img src="http://placehold.it/50x50" />
+				       <img src="http://placehold.it/50x50" />
+				       <img src="http://placehold.it/50x50" />
+				       <img src="http://placehold.it/50x50" />
+				        <img src="http://placehold.it/50x50" />
+				       <img src="http://placehold.it/50x50" />
+				       <img src="http://placehold.it/50x50" />
+				       <img src="http://placehold.it/50x50" />
+				       <img src="http://placehold.it/50x50" />
+				       <img src="http://placehold.it/50x50" />
+				    </div>
+				  </div>
+				  </div>
 				<h1>Heading</h1>
 				<p><script>generateText(300)</script></p>
 				
